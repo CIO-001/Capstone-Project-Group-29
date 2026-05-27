@@ -1,4 +1,4 @@
-import "./Table%20Section.css";
+import "./TableSection.css";
 
 export default function TableSection({ title, children }) {
   return (
