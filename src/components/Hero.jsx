@@ -1,4 +1,3 @@
-
 import "./Hero.css";
 
 export default function Hero() {
@@ -9,7 +8,7 @@ export default function Hero() {
       <div className="hero-logo">
         <img
           src="/logo.svg"
-          alt=""
+          alt="Logo"
           className="logo-image"
         />
       </div>
@@ -30,26 +29,22 @@ export default function Hero() {
           the solar system in a clear, data-driven way.
         </p>
 
+        {/* Buttons */}
         <div className="hero-buttons">
 
-          <button
-            type="button"
-            className="primary-btn"
-          >
+          <a href="#planets" className="primary-btn">
             Explore the Data
-          </button>
+          </a>
 
-          <button
-            type="button"
-            className="secondary-btn"
-          >
+          <a href="#contact" className="secondary-btn">
             Contact Us
-          </button>
+          </a>
 
         </div>
+
       </div>
 
-      {/* Planet Globe */}
+      {/* Planet Image */}
       <div className="hero-image">
         <img
           src="/earth.png"
@@ -61,4 +56,3 @@ export default function Hero() {
     </section>
   );
 }
-
