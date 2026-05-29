@@ -1,0 +1,226 @@
+.hero {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(circle at top, #0a2472 0%, #020b24 70%);
+
+  color: white;
+  font-family: "Inter", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+  padding: 60px 8%;
+
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* SUBTLE STARS EFFECT */
+.hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    radial-gradient(white 1px, transparent 1px);
+
+  background-size: 80px 80px;
+
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+/* LOGO */
+.hero-logo {
+  position: absolute;
+
+  top: 30px;
+  left: 8%;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  z-index: 10;
+}
+
+.logo-image {
+  width: 58px;
+  height: 58px;
+
+  object-fit: contain;
+}
+
+.logo-text h2 {
+  margin: 0;
+
+  font-size: 34px;
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+.logo-text span {
+  color: #d1d5db;
+  font-size: 14px;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  flex: 1;
+  max-width: 620px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+  line-height: 1.05;
+
+  margin-bottom: 24px;
+
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.hero-content p {
+  color: #cbd5e1;
+
+  font-size: 20px;
+  line-height: 1.8;
+
+  margin-bottom: 36px;
+  max-width: 560px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* BUTTON BASE */
+.primary-btn,
+.secondary-btn {
+  padding: 16px 28px;
+
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* PRIMARY BUTTON */
+.primary-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+}
+
+/* SECONDARY BUTTON */
+.secondary-btn {
+  background: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+.secondary-btn:hover {
+  border-color: white;
+  transform: translateY(-3px);
+}
+
+/* EARTH IMAGE */
+.hero-image {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+.earth-image {
+  width: 100%;
+  max-width: 700px;
+
+  filter:
+    drop-shadow(0 0 40px rgba(59, 130, 246, 0.5))
+    drop-shadow(0 0 90px rgba(59, 130, 246, 0.25));
+
+  animation: floatPlanet 6s ease-in-out infinite;
+}
+
+/* FLOAT ANIMATION */
+@keyframes floatPlanet {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 968px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+
+    padding-top: 140px;
+    gap: 40px;
+  }
+
+  .hero-logo {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content p {
+    font-size: 17px;
+    margin-inline: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .earth-image {
+    max-width: 380px;
+  }
+}
