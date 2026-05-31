@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './PlanetsSection.css'
+import './PlanetCard.css'
 
 // ── Replace this URL with the actual API endpoint provided by your instructor ──
 const API_URL = 'https://api.le-systeme-solaire.net/rest/bodies/?filter[]=isPlanet,eq,true&filter[]=bodyType,eq,Planet&data=englishName,semimajorAxis,bodyType'
