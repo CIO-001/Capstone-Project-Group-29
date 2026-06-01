@@ -4,7 +4,7 @@
 
 /* ── Section shell ── */
 .planets-section {
-  background-color: #e4ecf7;          /* light periwinkle background */
+  background-color: #e4ecf7;
   padding: 60px 24px 72px;
   min-height: 100vh;
 }
@@ -23,7 +23,7 @@
 .section-title {
   font-size: 22px;
   font-weight: 700;
-  color: #1a3c8f;                     /* deep blue matching Figma */
+  color: #1a3c8f;
   margin: 0 0 12px;
   line-height: 1.3;
   letter-spacing: -0.01em;
@@ -62,7 +62,7 @@
 .planet-figure {
   margin: 0;
   padding: 0;
-  line-height: 0;               /* remove inline-block gap under img */
+  line-height: 0;
 }
 
 .planet-figure img {
@@ -70,7 +70,7 @@
   height: 190px;
   object-fit: cover;
   display: block;
-  border-radius: 12px 12px 0 0;  /* rounded only at top to match card */
+  border-radius: 12px 12px 0 0;
 }
 
 /* ── Text info block ── */
