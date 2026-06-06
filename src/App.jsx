@@ -1,18 +1,23 @@
 import './App.css';
 import Hero from './components/Hero/Hero';
-import VideoSection from './components/VideoSection/VideoSection';
-import PlanetCard from './components/PlanetCard/PlanetCard';
-import TableSection from "./components/TableSection/TableSection";
-import FormSection from './components/FormSection/FormSection';
-import Footer from './components/Footer/Footer';
+import TableSection from "./TableSection/TableSection";
+import Footer from './Footer/Footer';
 
 function App() {
   return (
     <>
       <Hero />
-      <TableSection />
+
+      <section id="planets">
+        <TableSection />
+      </section>
+
+      <section id="contact">
+        {/* form section */}
+      </section>
+
       <Footer />
-    </> // 👈 Added the missing slash here to close the fragment!
+    </>
   );
 }
 
