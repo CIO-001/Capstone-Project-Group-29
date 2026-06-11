@@ -36,7 +36,7 @@ export default function Footer() {
             <a href="https://www.linkedin.com/in/ifeomaokocha" target="_blank">
               Ifeoma A.
             </a>{" "}
-            <br className="mobile-break" /> Built by GroupName. All rights
+            <br className="mobile-break" /> Built by Group29. All rights
             reserved
           </p>
           <a
